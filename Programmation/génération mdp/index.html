@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generation_mdp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <h1>Générateur de mot de passe</h1>
+    <br><br>
+
+    <!-- affichage du mot de passe généré -->
+    <span id="password-display">MOT DE PASSE</span>
+    <br><br>
+
+    <!-- bouton pour générer un nouveau mot de passe -->
+    <button onclick="generatePassword()">Générer</button>
+    <br><br>
+    <!-- Affichage de la force du mot de passe -->
+    <p>force : </p>
+    <span id="strength-display"></span>
+    <br><br>
+    
+
+    <label for="length-input">Longueur du mot de passe (8-32)</label>
+    <br>
+    <p>Sélectionnez la longueur désirée et appuiez sur entrée</p>
+    <br>
+
+    <input type="number" id="length-input" min="8" max="32" value="12" onchange="setPasswordLength()">
+    <br><br>
+
+    <!-- Options pour les types de caractères à inclure -->
+    
+    <input type="checkbox" id="include-uppercase" onchange="updateOptions()" checked>
+    <label for="include-uppercase">Inclure des majuscules</label>
+    <br>
+
+    
+    <input type="checkbox" id="include-numbers" onchange="updateOptions()" >
+    <label for="include-numbers">Inclure des chiffres</label>
+    <br>
+
+    
+    <input type="checkbox" id="include-symbols" onchange="updateOptions()" >
+    <label for="include-symbols">Inclure des symboles</label>
+    <br>
+
+    <script src="script.js"></script>
+</body>
+</html>
