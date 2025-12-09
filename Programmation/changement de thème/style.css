@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+
+}
+#toggle-theme-btn {
+    background-color: #d41c1c;
+    color: #dbdbdb;
+    border: 2px solid #aa0000;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#toggle-theme-btn:hover {
+    background-color: #960000;
+    color: #ffffff;
+}
+
+
+body.dark-theme {
+    background-color: rgb(10, 9, 24);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+
+body.dark-theme #toggle-theme-btn {
+    background-color: #0e00cf;
+    color: #ffffff;
+    border: 2px solid #14016d;
+}
+
+
+body.dark-theme #toggle-theme-btn:hover {
+    background-color: #1c0068;
+    color: #ffffff;
+}
+
