@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visite3d</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/LogoHallesNoText.ico">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <header class="main-header">
+    <div class="container">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/LogoHalles.png" alt="Logo Halles de Béziers" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./commercants.html">Commerçants</a></li>
+                <li><a href="./visite3d.html" class="active">Visite "3D" </a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="visite-container" id="visite-wrapper">
+    <a-scene embedded renderer="colorManagement: true">
+
+        <a-assets>
+
+            <img id="pano-entree" src="./images/visite-3d/14/thumbnail.jpg">
+            <img id="fleche-img" src="./images/visite-3d/arrow.png">
+        </a-assets>
+
+
+            </a-image>
+
+         <a-image   id="fleche14-1" 
+                    class="clickable" 
+                    src="#fleche-img" 
+                    position="0.8991 0.81767 1.27693" 
+                    rotation="69.99997270451807 40.469154985680305 0"
+                    width="0.5" 
+                    height="0.5" 
+                    scale="1 1 2" 
+                    material="opacity: 0.8" 
+                    tabindex="0" 
+                    role="button" 
+                    animation__hover="property: position; startEvents: mouseenter; to: 0.8991 1.0 1.27693; easing: easeOutCubic; dir: alternate; loop: 1" 
+                    geometry="">
+
+        </a-image>
+        
+        <a-image   id="fleche14-2" 
+                    class="clickable" 
+                    src="#fleche-img" 
+                    position="-1.44829 0.81767 0.91248" 
+                    rotation="69.99997270451807 -52.24515654900412 0"
+                    width="0.5" 
+                    height="0.5" 
+                    scale="1 1 2" 
+                    material="opacity: 0.8" 
+                    tabindex="0" 
+                    role="button" 
+                    animation__hover="property: position; startEvents: mouseenter; to: -1.44829 1.0 0.91248; easing: easeOutCubic; dir: alternate; loop: 1" 
+                    geometry="">
+
+        </a-image>
+
+        <a-image   id="fleche14-3" 
+                    class="clickable" 
+                    src="#fleche-img" 
+                    position="-0.24514 0.81767 -2.09047" 
+                    rotation="69.99997270451807 -146.39644623387665 0"
+                    width="0.5" 
+                    height="0.5" 
+                    scale="1 1 2" 
+                    material="opacity: 0.8" 
+                    tabindex="0" 
+                    role="button" 
+                    animation__hover="property: position; startEvents: mouseenter; to: -0.24514 1.0 -2.09047; easing: easeOutCubic; dir: alternate; loop: 1" 
+                    geometry="">
+
+        </a-image>
+
+
+        <!-- Caméra avec curseur souris pour permettre les clics sur les entités (.clickable) -->
+        <a-entity camera="" look-controls="" position="0 1.6 0" roation="0 100 0" rotation="0 30 0" data-aframe-inspector-original-camera="">
+            <a-entity cursor="rayOrigin: mouse" raycaster="objects: .clickable; direction: 0.24661822448139822 0.06707959072953197 -0.9667883842192154; origin: 0.6044726341226131 2.1929507904623025 1.8119111994485242; useWorldCoordinates: true"></a-entity>
+        </a-entity>
+
+        
+        <!-- Sky fallback + image -->
+        <a-sky src="#pano-entree" rotation="0 -90 0"></a-sky>
+
+    </a-scene>
+    
+</main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-logo-box">
+                <img src="./images/LogoHalles.png" alt="Logo" class="footer-logo">
+            </div>
+            <div class="footer-legal">
+                <p>2026 Halles de Béziers. Tous droits réservés. 
+                    <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<script src="./sctipt.js"></script>
+</body>
+</html>

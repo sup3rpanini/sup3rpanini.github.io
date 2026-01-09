@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halles de Béziers - Accueil</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/LogoHallesNoText.ico">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./images/LogoHalles.png" alt="Logo Halles de Béziers" class="logo-img">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html" class="active">Accueil</a></li>
+                    <li><a href="./commercants.html">Commerçants</a></li>
+                    <li><a href="./visite3d.html">Visite "3D"</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <h1>Bienvenue aux Halles de Béziers</h1>
+            <p>Découvrez nos commerçants passionnés et explorez depuis chez vous grâce à notre visite 3D.</p>
+        </div>
+
+        <div class="image-gallery">
+            <img src="./images/index-images/vendeuse.jpg" alt="Vendeuse aux Halles" class="main-image zoomable">
+            <img src="./images/index-images/halles-beziers.jpg" alt="Vue des Halles" class="main-image zoomable">
+        </div>
+
+        <div class="bouton-container">
+            <a href="./commercants.html" class="btn">Nos Commerçants</a>
+            <a href="./visite3d.html" class="btn">Faire une Visite "3D"</a>
+            <a href="./contact.html" class="btn">Nous Contacter</a>
+        </div>
+
+        <div class="infos-container">
+            <div class="info-box">
+                <h2>Infos Pratiques</h2>
+                <p class="adresse"><strong>Accès :</strong> Place Pierre Semard, 34500 Béziers</p>
+                <div class="horaires">
+                    <p class="saison"><strong>Horaires d'ouverture 2026</strong><br>
+                    <small>Du 01 janvier au 31 décembre</small></p>
+                    <p><strong>Mardi - Samedi :</strong> 08h à 23h</p>
+                    <p><strong>Dimanche :</strong> 08h à 15h</p>
+                    <p class="fermeture"><em>Fermé le Lundi</em></p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h2>Suivez-nous</h2>
+                <p>Restez informés de nos événements et actualités sur nos réseaux sociaux.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/hallesdebeziers/?hl=fr" target="_blank" class="social-btn">Instagram</a>
+                    <a href="https://www.facebook.com/hallesdebeziersbiltoki/?_rdr" target="_blank" class="social-btn">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-logo-box">
+                <img src="./images/LogoHalles.png" alt="Logo" class="footer-logo">
+            </div>
+            <div class="footer-legal">
+                <p>2026 Halles de Béziers. Tous droits réservés. 
+                    <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="./sctipt.js"></script>
+
+    
+    <div class="image-modal" id="imageModal" aria-hidden="true">
+        <div class="modal-backdrop" data-action="close"></div>
+        <div class="modal-content" role="dialog" aria-modal="true" aria-label="Image agrandie">
+            <button class="modal-close" aria-label="Fermer">✕</button>
+            <img src="" alt="" class="modal-img">
+        </div>
+    </div>
+</body>
+</html>
